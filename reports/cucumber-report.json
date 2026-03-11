@@ -1,0 +1,356 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-registration-and-login;register-and-login-with-a-new-user",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Register and login with a new user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 572598400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to Magento homepage",
+            "match": {
+              "location": "features\\step-definitions\\userSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3541443299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user registers with \"Chathua\" \"Dasaruwa\" \"dynamic\" \"Password@123\" \"Password@123\"",
+            "match": {
+              "location": "features\\step-definitions\\userSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7349545700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "registration should be successful",
+            "match": {
+              "location": "features\\step-definitions\\userSteps.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21848099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user logs out",
+            "match": {
+              "location": "features\\step-definitions\\userSteps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2373450199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user logs in again with \"dynamic\" \"Password@123\"",
+            "match": {
+              "location": "features\\step-definitions\\userSteps.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4543090900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "dashboard should be visible",
+            "match": {
+              "location": "features\\step-definitions\\userSteps.ts:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13624900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 300205500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-registration-and-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User Registration and Login",
+    "tags": [],
+    "uri": "features\\frontend\\02-registration-login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "product-search-and-cart-management;search-product-and-manage-cart",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Search product and manage cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 653772399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to Magento homepage",
+            "match": {
+              "location": "features\\step-definitions\\userSteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3315992200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "user logs in again with \"dynamic\" \"Password@123\"",
+            "match": {
+              "location": "features\\step-definitions\\userSteps.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4719032100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user searches for \"Jacket\"",
+            "match": {
+              "location": "features\\step-definitions\\productCartSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4357929000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "user adds the product to cart",
+            "match": {
+              "location": "features\\step-definitions\\productCartSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6779355400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "product should appear in cart",
+            "match": {
+              "location": "features\\step-definitions\\productCartSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17976900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "user updates product quantity to \"2\"",
+            "match": {
+              "location": "features\\step-definitions\\productCartSteps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1674580900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "cart quantity should be \"2\"",
+            "match": {
+              "location": "features\\step-definitions\\productCartSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 691209700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "user removes the product from cart",
+            "match": {
+              "location": "features\\step-definitions\\productCartSteps.ts:51"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 15878111700,
+              "error_message": "page.waitForSelector: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.cart-empty') to be visible\u001b[22m\n\n    at ProductPage.<anonymous> (C:\\Projects\\PlayTest\\pages\\ProductPage.ts:79:17)\n    at fulfilled (C:\\Projects\\PlayTest\\pages\\ProductPage.ts:5:58)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "cart should be empty",
+            "match": {
+              "location": "features\\step-definitions\\productCartSteps.ts:57"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 305902499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "product-search-and-cart-management",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Product Search and Cart Management",
+    "tags": [],
+    "uri": "features\\frontend\\03-product-cart.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "admin-login-and-orders-validation;admin-login-and-check-orders",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Admin login and check orders",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 831461300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "admin navigates to Magento admin page",
+            "match": {
+              "location": "features\\step-definitions\\adminSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3861552499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "admin logs in with username \"magebit\" and password \"Demo123\"",
+            "match": {
+              "location": "features\\step-definitions\\adminSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3414462500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "admin navigates to Orders",
+            "match": {
+              "location": "features\\step-definitions\\adminSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2429286399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 311454899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "admin-login-and-orders-validation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Admin Login and Orders Validation",
+    "tags": [],
+    "uri": "features\\frontend\\admin\\01-admin-login.feature"
+  }
+]
